@@ -1,0 +1,30 @@
+.info {
+    text-align: center;
+}
+
+.info--photo, .info--photo  > img{
+    border-radius: 10px 10px 0 0;
+}
+.info--title {
+    margin-top: 1rem;
+}
+.info--website {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+.info--website_link{
+    font-weight: 400;
+    font-size: 0.64rem;
+}
+.info--icon {
+    margin-right: 10px;
+}
+.info--buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 1.5rem;
+}
+.button--email{
+    background-color: var(--clr-btn--bg);
+    color: var(--clr-btn--text);
+}

@@ -1,0 +1,7 @@
+.interest {
+    margin-top: 1.2rem;
+}
+.interest--title {
+    margin-bottom: 0.2rem;
+    color: var(--clr-light-heading);
+  }

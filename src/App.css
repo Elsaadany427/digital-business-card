@@ -1,0 +1,161 @@
+/* ---------------------- */
+/* Fonts                  */
+/* ---------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+/* ---------------------- */
+/* Custom properties      */
+/* ---------------------- */
+
+:root {
+  /* Heading and titles */
+  --clr-light-heading: #f5f5f5;
+  --clr-light-text: #dcdcdc;
+  --clr-accent: #f3bf99;
+
+  /* Backgrounds */
+  --clr-background-darker: #161619;
+  --clr-background-dark: #1a1b21;
+
+  /* Shadows */
+  --clr-shadow-dark: #0000000d;
+
+  /* Social media */
+  --clr-social-icons: #918e9b;
+  --clr-linkedin: #5093e2;
+
+  /* Buttons */
+  --clr-btn--bg: #d1d5db;
+  --clr-btn--text: #374151;
+
+  /* Fonts */
+  --ff-main: "Inter", sans-serif;
+}
+
+/* ---------------------- */
+/* Reset                  */
+/* ---------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* ---------------------- */
+/* Typography             */
+/* ---------------------- */
+
+html {
+  font-family: var(--ff-main);
+}
+
+h1,
+h2,
+p,
+a {
+  color: var(--clr-light-heading);
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.64;
+  line-height: 1.3rem;
+  color: var(--clr-light-text);
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.491;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.2;
+  line-height: 1.3rem;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.491;
+  text-align: center;
+  color: var(--clr-accent);
+}
+
+/* ---------------------- */
+/* Buttons                */
+/* ---------------------- */
+
+.button {
+  box-shadow: 0px 1px 2px var(--clr-shadow-dark);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  min-width: 115px;
+}
+
+.button:hover {
+  filter: brightness(85%);
+}
+
+.button--email {
+  border: 1px solid var(--clr-light-heading);
+}
+
+.button--linkedin {
+  color: var(--clr-light-heading);
+  background-color: var(--clr-linkedin);
+  border: 1px solid var(--clr-linkedin);
+}
+
+/* ---------------------- */
+/* App Component             */
+/* ---------------------- */
+
+.card {
+  max-width: 22rem;
+  background-color: var(--clr-background-dark);
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.container {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* #root {
+  max-width: 22em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 100px;
+  margin: 3em;
+} */
